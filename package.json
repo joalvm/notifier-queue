@@ -1,0 +1,47 @@
+{
+  "name": "notifier-queue",
+  "version": "0.1.0",
+  "description": "Plugin de notificaciones en cola",
+  "main": "index.js",
+  "author": "Alejandro Vilchez",
+  "homepage": "https://github.com/joalvm/notifier-queue#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joalvm/notifier-queue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joalvm/notifier-queue/issues"
+  },
+  "keywords": [
+    "Notifier",
+    "notify",
+    "queue",
+    "web"
+  ],
+  "scripts": {
+    "build": "webpack --config=webpack.config.js",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
+    "@typescript-eslint/parser": "^3.9.0",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.10.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1"
+  }
+}
