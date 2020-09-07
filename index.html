@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="./">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NotifierJS</title>
 </head>
 <body>
     <h1>Notifier<strong>JS</strong></h1>
+    <script src="dist/notifier.js"></script>
+    <script>
+        var notifier1 = new Notifier({
+            autoClose: true,
+            withIcon: true,
+            storage: 'localStorage',
+            timeout: 6000
+        });
+
+        Notifier.configure({
+            autoClose: false,
+            withIcon: true,
+            storage: 'window',
+            timeout: 9000
+        });
+
+        console.log(notifier1.error('error instanciado'));
+        console.log(Notifier.error('error estatico'));
+    </script>
 </body>
 </html>
